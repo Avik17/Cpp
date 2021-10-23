@@ -16,6 +16,19 @@ int main(){
            else cout<<"  ";
            
        }
+       for (int j  = 0; j < n ; j++)
+       {   
+           if( j<=i){
+               if (j+1==1)
+               {
+                   continue;/* code */
+               }
+               
+               cout<<j+1<<" ";
+           }
+           else cout<<"  ";
+           
+       }
        cout<<"\n";
     }
     
