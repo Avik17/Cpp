@@ -21,7 +21,7 @@ int main()
    cout<<digits(n)<<"\n";
 
     int rev = 0;
-    for (int i = digits(n); i>=1; i--)
+    for (int i = digits(n); n>=1; i--)
     {
         int x = n % 10;
         rev +=  x *(pow(10, i-1));
