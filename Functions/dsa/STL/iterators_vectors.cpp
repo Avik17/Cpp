@@ -18,7 +18,9 @@ using namespace std;
         cout<<itr->first<<" "<<itr->second<<endl;
         /* code */
     }
- 
+ int ar[5];
+
+ cout<<*(ar+3);
 
 return 0;
 }
