@@ -53,7 +53,7 @@ int binary_search(int arr[], int target, int size)
         }
     }
     
-    return start;
+    return end;
 }
     int main(){
     int arr[] = {3, 4, 9, 12, 15, 19, 20, 23, 26, 28, 31, 35, 41, 65, 77, 81, 89};

@@ -53,9 +53,9 @@ int main()
 {
     int arr[] = {3, 4, 9, 12, 15, 19, 20, 23, 26, 28, 31, 35, 41, 65, 77, 81, 89};
     int arr2[]={112,106,91,88,79,65,54,53,49,32,31,27,11,7,6,2};
-    int size = sizeof(arr2) / sizeof(arr[0]) - 1;
-    int target = 55;
-    int ans = binary_search(arr2, target, size);
+    int size = sizeof(arr) / sizeof(arr[0]) - 1;
+    int target = 23;
+    int ans = binary_search(arr, target, size);
     cout << ans << endl;
 
     return 0;
