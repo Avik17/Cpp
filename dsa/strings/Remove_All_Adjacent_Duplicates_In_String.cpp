@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
