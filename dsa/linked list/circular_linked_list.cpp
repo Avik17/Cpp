@@ -7,37 +7,51 @@ class node
 public:
     int data;
     node *next;
+    node(int data){
+        this->data=data;
+        this->next==NULL;
+    }
 };
- void print_list(node* head){
-      node* list=head;
+
+void InsertNode(node* &tail,int data,int element){
+    if(tail==NULL){
+        node* node1=new node(data);
+        node1->next=node1;
+        tail=node1;
+    }
+    else{
+        node* temp=tail;
+        while (temp->data!=element)
+        {
+         temp=temp->next;   /* code */
+        }
+        
+
+        node* node_create=new node(data);
+        node_create->next=temp->next;
+        temp->next=node_create;
+        
+        
+    }
+}
+ void print_list(node* tail){
+      node* list=tail;
        
        do{
-          std::cout<<list->data<<"\n";
+          std::cout<<list->data<<" ";
            list=list->next;/* code */
-       }while (list!=head);
+       }while (list!=tail);
        }
        
 int main()
 {
-    node *head;
-    head = new node();
-    node *second;
-    second = new node();
-    node *third;
-    third = new node();
-    node *fourth;
-    fourth = new node();
-    head->data = 7;
-    head->next = second;
-    second->data = 10;
-
-    second->next = third;
-    third->data = 46;
-    
-    third->next = fourth;
-    fourth->data = 84;
-
-    fourth->next = head;
-    print_list(head);
+    node *tail=NULL;
+    InsertNode(tail,5,0);
+    InsertNode(tail,7,5);
+    InsertNode(tail,9,7);
+    InsertNode(tail,6,9);
+    InsertNode(tail,2,6);
+   InsertNode(tail,22,7);
+    print_list(tail);
 return 0;
 }
