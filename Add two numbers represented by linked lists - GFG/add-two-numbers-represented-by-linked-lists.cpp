@@ -144,7 +144,7 @@ class Solution
             while(carry !=0){
                 // int sum=carry;
                 // int digit=sum%10;
-                 prev= Insertnode(head3,prev,carry%10);
+                 prev= Insertnode(head3,prev,carry);
                  carry=carry/10;
             }
         Node*result=reverse(head3);
